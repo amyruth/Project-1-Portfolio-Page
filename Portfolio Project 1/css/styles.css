@@ -4,6 +4,7 @@ body {
     font-size: 16px;
     box-sizing: border-box;
     background-color: gray;
+    color: aliceblue;
 }
 
 h1,
@@ -48,23 +49,33 @@ i {
 .container {
     width: 100%;
     display: flex;
-    background-color: cyan;
+    /* background-color: cyan; */
+    background-image: url(https://image.ibb.co/eyEJ8n/kelly_sikkema_506335_unsplash.jpg);
+    background-size: cover;
 }
 
+.intro{
+    z-index: 1;
+}
 .about,
 .benefits {
     background-color: orange;
     padding: 15px;
 }
+
+.benefits, .about, #contact, .gallery-thumbnail{
+    border-radius: 20px;
+    margin: 20px
+}
+
 .benefits{
     display: flex;
+    justify-content: center;
 }
 
-.benefit-list {
-    list-style-type: none;
+.selling-points{
+    margin-top: 0;
 }
-
-
 #contact:link, #contact:visited{
     text-decoration: none;
     align-self: center;
@@ -72,6 +83,7 @@ i {
     letter-spacing: 3px;
     color: aliceblue;
     padding: 8px 20px;
+    margin-bottom: 15px;
     background-color: deeppink;
     transition: all .5s ease-in-out;
 }
@@ -83,6 +95,27 @@ i {
 
 .gallery{
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.gallery, .projects{
+    flex-direction: column;
+    align-items: center;
+}
+.gallery-thumbnail{
+    background-color: gray;
+    width: 150px;
+    height: 150px;
+    margin: 10px 30px;
+    margin-top: 25px;
 }
 
 footer{
@@ -113,7 +146,7 @@ footer{
     }
 }
 
-@media screen and (min-width: 501px) and (max-width: 700px){
+@media screen and (min-width: 501px) and (max-width: 620px){
     body{
         font-size: 20px;
     }
@@ -128,4 +161,26 @@ footer{
        margin-top: 0;
        text-align: center;
    }
+}
+
+
+@media screen and (min-width: 621px) and (max-width: 1000px){
+    body{
+        font-size: 20px;
+    }
+    .container, .benefits{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about, .selling-points{
+        text-align: left;
+        
+    }
+    .intro{
+        width: 70%;
+    }
+    .projects{
+        flex-direction: row;
+    }
 }
