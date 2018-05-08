@@ -5,56 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Amy Rutherford, Web Developer</title>
+    <title>Amy Rutherford, Freelance Web Developer</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/newstyles.css">
 </head>
 
 <body>
     <header>
-        <div class="social">
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-google-plus"></i>
-            <i class="fab fa-github"></i>
-        </div>
-
+        <img id="logo" src="img/colin-watts-523813-unsplashcrop.jpg" alt="Photo by Colin Watts on Unsplash">
         <div class="nameplate">
             <h1>
                 Amy Rutherford
             </h1>
         </div>
     </header>
-    <main class="container">
-        <section class="intro">
-            <h2>Amy Loves to Make Websites</h2>
-            <p class="about">
-                I've been making things since I was a child, from mud pies and Legos to music and knitting socks and sweaters. Today, I like
-                building functional websites that look good on any screen for anyone that needs them.
-            </p>
 
-            <div class="benefits">
-                <h3>Why work with me?</h3>
-                <p class="selling-points">
-                    I have a wide variety interests and work experience outside of tech, allowing me to craft a website to your needs that is fast and mobile-friendly.
+    <main class="container">
+
+        <section class="intro">
+            <div class="about-text">
+                <h2 class="greeting">Hello. I'm a front-end web developer.</h2>
+
+                <p class="about">
+                    I've had the urge to build as long as I can remember, from mud pies and Legos to knitting socks. Building websites is an
+                    extension of that interest.
                 </p>
-                <a href="#" id="contact">Contact</a>
             </div>
         </section>
-        <section class="gallery">
-            <h2>Three projects here</h2>
 
-            <div class="projects">
-                <div class="gallery-thumbnail"></div>
-                <div class="gallery-thumbnail"></div>
-                <div class="gallery-thumbnail"></div>
+        <section class="projects">
+            <div class="project-intro">
+                <h2>Project Gallery</h2>
+                <p class="click-for-more">Click image to see full version</p>
             </div>
+
+            <div class="gallery">
+                <div class="project-card">
+                    <h4 class="project-title">
+                        Pixel Maker
+                    </h4>
+                    <a class="project-link" target="_blank" href="https://codepen.io/amyruth/full/wmqeQQ/">
+                        <img class="project-img" src="img/pixeledit.jpg" alt="screenshot of the Pixel Maker page">
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <h4 class="project-title">
+                        Random Quotes
+                    </h4>
+                    <a class="project-link" target="_blank" href="https://codepen.io/amyruth/full/wKgdBB/">
+                        <img class="project-img" src="img/quotegenedit.jpg" alt="screenshot of the quote generator ">
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <h4 class="project-title">
+                        Animal Card
+                    </h4>
+                    <a class="project-link" target="_blank" href="https://codepen.io/amyruth/full/oEXRoQ/">
+                        <img class="project-img" src="img/swanedit.jpg" alt="screenshot of Animal Trading Card">
+                    </a>
+                </div>
+
         </section>
     </main>
+
     <footer>
-        <p id="copyright">@2018 Amy Rutherford</p>
+        <div class="social">
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-google-plus"></i>
+            <i class="fab fa-github"></i>
+        </div>
     </footer>
 </body>
 

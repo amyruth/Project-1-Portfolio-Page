@@ -1,0 +1,151 @@
+.project-img {
+    height: 150px;
+    width: 150px;
+}
+
+#logo {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 20px;
+   background-color: #000;
+}
+
+.nameplate {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+
+body {
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #E0FFFF;
+    background-color: #5F9EA0;
+}
+
+header,
+main,
+.intro,
+.gallery,
+.about-text,
+.project-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    background-image: url(../img/overlay-kelly-sikkema-506335-unsplash.jpg);
+}
+
+.greeting {
+    text-align: center;
+    margin: 25px;
+}
+
+.about {
+    text-align: center;
+    width: 90%;
+}
+
+.click-for-more {
+    font-size: 18px;
+}
+
+.project-intro {
+    text-align: center;
+}
+
+.projects {
+    margin-bottom: 30px;
+}
+
+.project-card {
+    white-space: nowrap;
+}
+
+.project-img{
+    border-radius: 10px;
+}
+
+footer,
+.social {
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    justify-content: center;
+    height: 30%;
+}
+
+.social {
+    width: 40%;
+    font-size: 35px;
+    justify-content: space-around;
+}
+
+.social i {
+    padding: 20px;
+}
+
+@media screen and (max-width: 300px) {
+    .social {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+    .project-title {
+        font-size: x-large;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #logo,
+    .nameplate {
+        align-self: center;
+    }
+    #logo{
+        height: 100px;
+        width: 100px;
+    }
+    .nameplate {
+        margin: 15px;
+        font-size: 22px;
+    }
+    .gallery {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-img {
+        height: 150px;
+        width: 150px;
+    }
+    .project-card {
+        text-align: center;
+        margin: 20px;
+    }
+}
+
+@media screen and (min-width: 830px){
+    .intro{
+        width: 600px;
+    }
+}
+@media screen and (min-width: 1400px){
+   main, header, footer{
+        width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
