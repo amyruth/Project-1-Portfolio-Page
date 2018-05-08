@@ -9,6 +9,7 @@
 }
 body{
     font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
+    font-size: 18px;
     color: black;
     background-color: salmon;
 }
@@ -19,9 +20,7 @@ header, main, .intro, .gallery, .about-text, .project-card{
     justify-content: space-between;
     align-items: center;
 }
-.social, footer{
-    border: 1px solid black;
-}
+
 footer, .social{
     display: flex;
     flex-direction: row;
@@ -47,12 +46,36 @@ footer{
     font-size: 18px;
 }
 
-.projects h2{
-   text-align: center;
+.project-intro{
+    text-align: center;
 }
 
 .projects{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
+@media screen and (min-width: 500px) and (max-width: 599px){
+    .project-title{
+        font-size: larger;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .gallery{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-img{
+        height: 150px;
+        width: 150px;
+    }
+
+    .project-card{
+        text-align: center;
+        margin: 20px;
+        white-space: nowrap;
+    }
+}
 
