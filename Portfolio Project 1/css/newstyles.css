@@ -1,0 +1,58 @@
+.logo, .project-img{
+    height: 150px;
+    width: 150px;
+}
+
+.logo{
+    border-radius: 50%;
+    margin: 15px;
+}
+body{
+    font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: salmon;
+}
+header, main, .intro, .gallery, .about-text, .project-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.social, footer{
+    border: 1px solid black;
+}
+footer, .social{
+    display: flex;
+    flex-direction: row;
+}
+footer{
+    justify-content: center;
+}
+.social{
+    justify-content: space-between;
+    width: 40%;
+    font-size: 35px;
+}
+.greeting{
+    text-align: center;
+}
+
+.about{
+    text-align: center;
+    width: 90%;
+}
+
+.click-for-more{
+    font-size: 18px;
+}
+
+.projects h2{
+   text-align: center;
+}
+
+.projects{
+    margin-bottom: 20px;
+}
+
+
