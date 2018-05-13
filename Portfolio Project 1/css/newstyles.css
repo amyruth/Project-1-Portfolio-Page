@@ -8,7 +8,6 @@
     width: 120px;
     border-radius: 50%;
     margin: 20px;
-   background-color: #000;
 }
 
 .nameplate {
@@ -21,7 +20,7 @@ body {
     font-family: Comfortaa, Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: #E0FFFF;
-    background-color: #5F9EA0;
+    background-color:#5fa06f
 }
 
 header,
@@ -38,7 +37,8 @@ main,
 }
 
 .container {
-    background-image: url(../img/overlay-kelly-sikkema-506335-unsplash.jpg);
+    background-image: url(../img/laptop\ and\ glasses.jpeg);
+    background-size: cover;
 }
 
 .greeting {
@@ -65,10 +65,14 @@ main,
 
 .project-card {
     white-space: nowrap;
+    margin: 0 20px;
 }
 
-.project-img{
+.project-img {
     border-radius: 10px;
+}
+.project-img:hover {
+   box-shadow: 8px 4px 4px rgb(152, 154, 158);
 }
 
 footer,
@@ -90,7 +94,17 @@ footer {
 
 .social i {
     padding: 20px;
+    color: #E0FFFF;
 }
+
+.social a:link{
+    text-decoration: none;    
+}
+
+.social i:hover{
+    color: #5F72A0;
+}
+
 
 @media screen and (max-width: 300px) {
     .social {
@@ -114,7 +128,7 @@ footer {
     .nameplate {
         align-self: center;
     }
-    #logo{
+    #logo {
         height: 100px;
         width: 100px;
     }
@@ -133,17 +147,27 @@ footer {
     }
     .project-card {
         text-align: center;
-        margin: 20px;
+        /* margin: 20px; */
     }
 }
 
-@media screen and (min-width: 830px){
-    .intro{
+@media screen and (min-width: 650px) {
+    .greeting{
+        font-size: 2em;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (min-width: 830px) {
+    .intro {
         width: 600px;
     }
 }
-@media screen and (min-width: 1400px){
-   main, header, footer{
+
+@media screen and (min-width: 1400px) {
+    main,
+    header,
+    footer {
         width: 1300px;
         margin-left: auto;
         margin-right: auto;
